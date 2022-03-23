@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Запомни свое счастливое число</title>
+{% endblock %}
+
+{% block body %}
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+
+    {% if user.is_authenticated %}
+        <h1 class="display-4 fw-normal">Привет, {{ user.username }}!</h1>
+        <h2>Твое счастливое число</h2>
+        <h2>{{item}}</h2>
+        <meta http-equiv="Refresh" content="5"/>
+    {% else %}
+        <h1 class="display-4 fw-normal">Только 5 секунд</h1>
+        <p class="fs-5 text-muted">Зарегистрируйся и узнаешь свое счастливое число</p>
+    {% endif %}
+</div>
+
+
+{% endblock %}
