@@ -1,5 +1,4 @@
 from random import randint
-import time
 
 from django.shortcuts import render
 
