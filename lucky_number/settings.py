@@ -124,8 +124,8 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SOCIAL_AUTH_GITHUB_KEY = '97691497ba95b66b956d'
-SOCIAL_AUTH_GITHUB_SECRET = 'ae69be0d2b4d01fe231d443598dadc42802bd2a3'
+SOCIAL_AUTH_GITHUB_KEY = 'secret_1' # input key in auth github
+SOCIAL_AUTH_GITHUB_SECRET = 'secret_2'
 LOGIN_URL = "/"
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
